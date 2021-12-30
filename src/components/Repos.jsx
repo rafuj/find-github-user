@@ -7,19 +7,19 @@ export default function Repos({ repos }) {
       <a
         href={repos.html_url}
         target="_blank"
-        className="card text-center text-light hover-effects"
+        className="card h-100 text-center text-light hover-effects"
         rel="noreferrer"
       >
         <div className="card-body text-capitalize">
-          <h6 className="title m-0">{repos.name}</h6>
+          <h6 className="title m-0 text-base">{repos.name}</h6>
         </div>
         <div className="cart-footer border-top d-flex flex-wrap justify-content-evenly p-2 font-sm">
           <span className="p-1">
-            <strong className="me-1 text-base">Created At:</strong>
+            <strong className="me-1">Created At:</strong>
             {new Date(repos.created_at).toDateString()}
           </span>
           <span className="p-1">
-            <strong className="me-1 text-base">Last Updated:</strong>
+            <strong className="me-1">Last Updated:</strong>
             {new Date(repos.updated_at).toDateString()}
           </span>
         </div>
